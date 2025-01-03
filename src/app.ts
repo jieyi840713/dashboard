@@ -1,5 +1,6 @@
 import express, { Application } from 'express';
 import { errorHandler, notFoundHandler } from './middleware/errorHandler';
+import { authMiddleware } from './middleware/auth';
 import {UserRoute} from './routes/UserRoute'
 import {ProductRoute} from './routes/ProductRoute'
 
@@ -20,7 +21,7 @@ class App {
 
     private initializeRoutes(){
         this.app.use('/api/users', new UserRoute().getRouter())
-        this.app.use('/api/product', new ProductRoute().getRouter())
+        this.app.use('/api/product', authMiddleware, new ProductRoute().getRouter())
     }
 
     private initializeErrorHandling(){

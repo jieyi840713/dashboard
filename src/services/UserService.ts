@@ -1,5 +1,8 @@
-import {hashPwd, getIsPasswordMatch} from '../utils/hashUtil'
+import { getIsPasswordMatch } from '../utils/hashUtil'
 import { UserDao } from '../dao/UserDao';
+import jwt from 'jsonwebtoken';
+
+const JWT_SECRET = '195c4c6511dd5c83cf531288342032cc34ca52c7a869efb9980a98ffb45babd950c7efcf3d27c8d8cda8e3f557ec20740c640573f51fbb5846e41a6bafa4b4a8';
 
 export class UserService {
 
@@ -14,7 +17,14 @@ export class UserService {
         if(!user) throw new Error("Can't find this username")
         const isPasswordMatch =  getIsPasswordMatch(password, user.password)
         if(!isPasswordMatch) throw new Error("Password is wrong!")
-        return 'login success'
+        // 產生jwt
+        const token = jwt.sign(
+            {username: user.username, roleCode: user.roleCode},
+            JWT_SECRET,
+            {expiresIn: '24h'}
+        )
+
+        return {message: 'login success', token, user: {username: user.username, roleCode: user.roleCode}}
     }
 
     // async createUser (roleCode, username, password, userStatus) {
