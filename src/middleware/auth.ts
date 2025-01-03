@@ -1,11 +1,10 @@
-import { Request, Response, NextFunction } from "express";
+import { Response, NextFunction } from "express";
+import { AuthRequest } from "../interfaces/Auth";
 import jwt from 'jsonwebtoken';
 
 const JWT_SECRET = '195c4c6511dd5c83cf531288342032cc34ca52c7a869efb9980a98ffb45babd950c7efcf3d27c8d8cda8e3f557ec20740c640573f51fbb5846e41a6bafa4b4a8';
 
-export interface AuthRequest extends Request {
-    user?: {username: string; roleCode: string}
-}
+
 
 export const authMiddleware = (
     req: AuthRequest,
