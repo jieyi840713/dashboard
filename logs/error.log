@@ -1,0 +1,16 @@
+{"level":"error","message":"Sql 語法出錯， Error: Error: Unknown column 'chart_nam' in 'field list'","service":"dashboard","timestamp":"2025-01-24 10:19:44"}
+{"level":"error","message":"Sql 語法出錯， Error: Error: Unknown column 'chart_nam' in 'field list'","service":"dashboard","timestamp":"2025-01-24 10:19:44"}
+{"level":"error","message":"Sql 語法出錯， Error: Malformed communication packet.","service":"dashboard","timestamp":"2025-01-24 14:15:30"}
+{"level":"error","message":"Sql 語法出錯， Error: Incorrect number of arguments for PROCEDURE dashboard.sp_create_purchase_inventory_transaction; expected 4, got 5","service":"dashboard","timestamp":"2025-01-24 14:16:39"}
+{"level":"error","message":"Sql 語法出錯， Error: Insufficient stock for ingredient ID: 10","service":"dashboard","timestamp":"2025-01-24 14:32:32"}
+{"level":"error","message":"Sql 語法出錯， Error: connect ECONNREFUSED ::1:4000","service":"dashboard","timestamp":"2025-02-04 13:22:58"}
+{"level":"error","message":"Sql 語法出錯， Error: connect ECONNREFUSED ::1:4000","service":"dashboard","timestamp":"2025-02-04 13:25:40"}
+{"level":"error","message":"Sql 語法出錯， Error: connect ECONNREFUSED ::1:4000","service":"dashboard","timestamp":"2025-02-04 13:25:40"}
+{"level":"error","message":"Sql 語法出錯， Error: connect ECONNREFUSED ::1:4000","service":"dashboard","timestamp":"2025-02-04 13:25:49"}
+{"level":"error","message":"Sql 語法出錯， Error: connect ECONNREFUSED ::1:4000","service":"dashboard","timestamp":"2025-02-04 13:25:49"}
+{"level":"error","message":"Sql 語法出錯， Error: connect ECONNREFUSED ::1:4000","service":"dashboard","timestamp":"2025-02-04 13:25:50"}
+{"level":"error","message":"Sql 語法出錯， Error: connect ECONNREFUSED ::1:4000","service":"dashboard","timestamp":"2025-02-04 13:25:50"}
+{"level":"error","message":"Sql 語法出錯， Error: connect ECONNREFUSED ::1:4000","service":"dashboard","timestamp":"2025-02-04 13:26:07"}
+{"level":"error","message":"Sql 語法出錯， Error: connect ECONNREFUSED ::1:4000","service":"dashboard","timestamp":"2025-02-04 13:27:03"}
+{"level":"error","message":"Sql 語法出錯， Error: connect ECONNREFUSED ::1:4000","service":"dashboard","timestamp":"2025-02-04 13:27:03"}
+{"level":"error","message":"Sql 語法出錯， Error: Unknown column 'data_date' in 'where clause'","service":"dashboard","timestamp":"2025-02-05 10:45:41"}
