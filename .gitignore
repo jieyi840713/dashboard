@@ -1,0 +1,12 @@
+.DS_Store
+.idea
+*.pid
+*.log
+**/node_modules/*
+.vscode/launch.json
+#eslintrc
+eslintrc
+server/src/servers/dataService/swagger-output.json
+/pm2
+uploads/*
+!uploads/.gitkeep
