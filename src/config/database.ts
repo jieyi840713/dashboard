@@ -8,7 +8,7 @@ const dbConfig = {
     user: 'root',
     password: '123456',
     database: 'dashboard',
-    port: 4000,
+    port: 3306,
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0,
