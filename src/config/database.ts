@@ -4,7 +4,7 @@ import mysql from 'mysql2/promise';
 // dotenv.config();
 
 const dbConfig = {
-    host: 'localhost',
+    host: '10.140.0.2',
     user: 'root',
     password: '123456',
     database: 'dashboard',
